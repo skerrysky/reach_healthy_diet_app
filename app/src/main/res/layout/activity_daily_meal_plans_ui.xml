@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EEECEC"
+    tools:context=".ExpectedDailyCaloricIntakeUI">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="106dp" />
+
+        <TextView
+            android:id="@+id/dailyMealPlans"
+            android:layout_width="match_parent"
+            android:layout_height="127dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:text="Daily Meal Plans"
+            android:textColor="#000000"
+            android:textSize="24sp" />
+
+
+        <Button
+            android:id="@+id/viewDailyMealPlansButtonID"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginLeft="15dp"
+            android:backgroundTint="#4791FF"
+            android:text="View Daily Meal Plans"
+            android:textSize="20sp"
+            android:gravity="start"/>
+
+        <Button
+            android:id="@+id/createDailyMealPlansButtonID"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="25dp"
+            android:backgroundTint="#4791FF"
+            android:text="Create Daily Meal Plans"
+            android:textSize="20sp"
+            android:gravity="start"/>
+
+        <Button
+            android:id="@+id/returnToMenuButtonID"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="25dp"
+            android:backgroundTint="#4791FF"
+            android:text="Return to Menu"
+            android:textSize="20sp"
+            android:gravity="start"/>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
