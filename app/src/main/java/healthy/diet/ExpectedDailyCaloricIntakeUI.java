@@ -26,6 +26,7 @@ public class ExpectedDailyCaloricIntakeUI extends AppCompatActivity {
         Button editExpectedDailyCaloricIntakeButton = findViewById(R.id.editExpectedDailyCaloricIntakeButton);
         Button returnToMenuButton = findViewById(R.id.returnToMenuButton);
 
+        // Set click listener for view button
         viewExpectedDailyCaloricIntakeButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -41,6 +42,7 @@ public class ExpectedDailyCaloricIntakeUI extends AppCompatActivity {
             }
         });
 
+        // Set click listener for enter button
         enterExpectedDailyCaloricIntakeButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -50,7 +52,7 @@ public class ExpectedDailyCaloricIntakeUI extends AppCompatActivity {
             }
         });
 
-        // Set click listener for editCurrentJob button
+        // Set click listener for edit button
         editExpectedDailyCaloricIntakeButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

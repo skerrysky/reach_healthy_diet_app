@@ -18,7 +18,6 @@ public class MainActivity extends AppCompatActivity {
         Button dailyMealPlansButton = findViewById(R.id.dailyMealPlansButtonID);
         Button compareMealPlansButton = findViewById(R.id.compareMealPlansButtonID);
 
-        // Set click listener for viewCurrentJob button
         expectedDailyCaloricIntakeButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -27,11 +26,10 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        // Set click listener for viewJobOffers button
         foodNutritionButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, FoodNutritionInformationUI.class); // Assume you have a JobOffersUI activity
+                Intent intent = new Intent(MainActivity.this, FoodNutritionInformationUI.class);
                 startActivity(intent);
             }
         });
@@ -39,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
         dailyMealPlansButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, DailyMealPlansUI.class); // Assume you have a JobOffersUI activity
+                Intent intent = new Intent(MainActivity.this, DailyMealPlansUI.class);
                 startActivity(intent);
             }
         });
@@ -47,7 +45,7 @@ public class MainActivity extends AppCompatActivity {
         compareMealPlansButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, CompareMealPlansUI.class); // Assume you have a JobOffersUI activity
+                Intent intent = new Intent(MainActivity.this, CompareMealPlansUI.class);
                 startActivity(intent);
             }
         });

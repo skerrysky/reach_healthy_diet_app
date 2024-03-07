@@ -37,23 +37,19 @@ public class CompareMealPlansUI_SelectPlans extends AppCompatActivity {
         // Define checkbox layout
         LinearLayout checkBoxLayout = findViewById(R.id.checkBoxLayout);
 
-        // Create a map for checkboxes and jobs to trace the references
+        // Create a map for checkboxes to trace the references
         Map<CheckBox, DataAndOperations.DailyMealPlan> checkBoxPlanMap = new HashMap<>();
 
-        // Create checkboxes for each job in the ranked job list
+        // Create checkboxes for each meal plan in the ranked plan list
         for (DataAndOperations.DailyMealPlan plan: rankedMealPlanList) {
             CheckBox newBox = new CheckBox(CompareMealPlansUI_SelectPlans.this);
-            //newBox.setText(job.getTitle() + ", " + job.getCompany()); -- ADD IN SCORE TO MAKE SURE RANKING WORKS
+            // Set text for newBox: add in total calories to ensure ranking works
             newBox.setText("Meal Plan Name: " + plan.getPlanName() + "\nTotal Calories: " + plan.getTotalCalories());
-            // Add the checkBox-Job association to the map
+            // Add the checkBox-Plan association to the map
             checkBoxPlanMap.put(newBox, plan);
             // Add checkbox to the layout
             checkBoxLayout.addView(newBox);
-            // Adjust checkbox format?
         }
-
-        // Create checkedCount to track checked counts
-
 
 
         Button makeComparisonButton = findViewById(R.id.makeComparisonButtonID);
@@ -68,7 +64,7 @@ public class CompareMealPlansUI_SelectPlans extends AppCompatActivity {
                 final int maxChecked = 2;
                 ArrayList<DataAndOperations.DailyMealPlan> selectedPlans = new ArrayList<>();
 
-                // Loop through click events for handle checkboxes and add selected jobs to the pool for comparison
+                // Loop through click events for handle checkboxes and add selected plans to the pool for comparison
                 for (int i = 0; i < checkBoxLayout.getChildCount(); i++) {
                     // See if the child view is a checkbox
                     if (checkBoxLayout.getChildAt(i) instanceof CheckBox) {
@@ -81,13 +77,13 @@ public class CompareMealPlansUI_SelectPlans extends AppCompatActivity {
                             checkedCount[0]++;
                             DataAndOperations.DailyMealPlan newSelection = checkBoxPlanMap.get(newBox);
 
-                            // Add the checked job to the selectedJob list
+                            // Add the checked plan to the selectedJob list
                             selectedPlans.add(newSelection);
                         }
                     }
                 }
 
-                if (selectedPlans.size() == 2) { // Only when selected 2 jobs can uses make comparison
+                if (selectedPlans.size() == 2) { // Only when selected 2 plans can uses make comparison
                     Intent intent = new Intent(CompareMealPlansUI_SelectPlans.this, ComparisonResultUI.class);
                     intent.putExtra("something", selectedPlans);
                     startActivity(intent);
