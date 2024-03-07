@@ -1,5 +1,13 @@
 # Android Project: Healthy Diet App
 
+## Links to Codes and Demos
+
+1. I used Android Studio to create this app. All my codes can be found in my GitHub: https://github.com/skerrysky/reach_healthy_diet_app
+The major files are located in the following path: backend .java files in app/src/main/java/healthy/diet, and frontend .xml files in app/src/main/res/layout. 
+
+
+2. I also recorded two demos to show the app’s functionalities. They can be found through this Google Drive link: https://drive.google.com/drive/folders/1YB-nItfUZzJ8DW585PP9QwFn5N1xZNs1?usp=drive_link
+The short one quickly demonstrates its core features. The long one is a full walkthrough of all of the app’s functionalities starting from preferred calories and food information entry. 
 
 ## Overview
 
@@ -54,15 +62,6 @@ This main menu option allows users to select and compare two stored meal plans, 
 
 
 All data is securely stored locally on the user's device. All the food nutrition information is only for demonstration purposes based on rough estimations. For more accurate details, please consult the FoodData Central database provided by USDA (United States Department of Agriculture). https://fdc.nal.usda.gov/fdc-app.html#/
-
-
-## Coding Sample
-
-
-1. I used Android Studio to create this app. All my codes can be found in my GitHub: https://github.com/skerrysky/reach_healthy_diet_app
-The major files are located in the following path: backend .java files in app/src/main/java/healthy/diet, and frontend .xml files in app/src/main/res/layout. 
-
-2. I also recorded two demos to show the app’s functionalities. Its path is demos/. The short one quickly demonstrates its core features. The long one is a full walkthrough of all of the app’s functionalities starting from preferred calories and food information entry. 
 
 
 ## Challenges: 
