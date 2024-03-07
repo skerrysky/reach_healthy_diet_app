@@ -2,12 +2,12 @@
 
 ## Links to Codes and Demos
 
-1. I used Android Studio to create this app. All my codes can be found in my GitHub: https://github.com/skerrysky/reach_healthy_diet_app
-The major files are located in the following path: backend .java files in app/src/main/java/healthy/diet, and frontend .xml files in app/src/main/res/layout. 
+1. I used Android Studio to create this app. The full project’s link can be found in my GitHub: https://github.com/skerrysky/reach_healthy_diet_app
+Specifically, my backend .java files can be found here: https://github.com/skerrysky/reach_healthy_diet_app/tree/master/app/src/main/java/healthy/diet
+And my frontend .xml files can be found here: https://github.com/skerrysky/reach_healthy_diet_app/tree/master/app/src/main/res/layout
 
 
-2. I also recorded two demos to show the app’s functionalities. They can be found through this Google Drive link: https://drive.google.com/drive/folders/1YB-nItfUZzJ8DW585PP9QwFn5N1xZNs1?usp=drive_link
-The short one quickly demonstrates its core features. The long one is a full walkthrough of all of the app’s functionalities starting from preferred calories and food information entry. 
+2. I also recorded two demos to show the app’s functionalities. They can be found in my YouTube account. The short one quickly demonstrates its core features (https://youtu.be/bak720yxyrY). The long one is a full walkthrough of all of the app’s functionalities starting from preferred calories and food information entry (https://youtu.be/bPtMFBgaPUo). 
 
 ## Overview
 
