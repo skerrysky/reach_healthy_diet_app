@@ -77,7 +77,7 @@ public class CompareMealPlansUI_SelectPlans extends AppCompatActivity {
                             checkedCount[0]++;
                             DataAndOperations.DailyMealPlan newSelection = checkBoxPlanMap.get(newBox);
 
-                            // Add the checked plan to the selectedJob list
+                            // Add the checked plan to the selectedPlan list
                             selectedPlans.add(newSelection);
                         }
                     }
